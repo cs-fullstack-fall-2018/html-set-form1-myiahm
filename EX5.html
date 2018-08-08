@@ -1,66 +1,76 @@
+<!-- 
+KEY: Where are my comments?! Please get in the habit of including at least one comment at the top of every submission saying what the code is doing. Can be brief, but needs to be there :-) 
+
+KEY: Good job overall as this was a complicated exercise! Note comments inline. Missing the 'table' element was really your only issue.
+
+You are really doing a great job. You and Madi are destroying the the Guys :-P
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Application Form</title> <!-- KEY: Always add a meaningful title :-)  -->
 </head>
 <body>
-<table border="1">
-    <thead>
-    </thead>
-    <tbody>
-    <tr>
-        <td>
-<div>
-    <label for="first-name">First Name</label>
-    <input type="text" name="first-name" id="first-name" placeholder="Enter Name">
-</div>
-        </td>
-        <td>
-            <div>
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name"placeholder="Enter Name">
-            </div>
-        </td>
-        <td>
-        <div>
-            <label for="radio-appication">New Application</label>
-            <input type="radio" name="radio-appication" id="radio-appication" value="application" />
-            <label for="radio-appication2">Existing Application</label>
-            <input type="radio" name="radio-appication2" id="radio-appication2" value="application" />
-        </div>
-        </td>
-        <td>
-            <div>
-                <label for="select-choice">Position:</label>
-                <select name="select-choice" id="select-choice">
-                    <option value="0" selected disabled>Selection</option>
-                    <option value="Developer">Developer</option>
-                    <option value="Software Engineer">Software Engineer</option>
-                    <option value="Software Developer">Software Developer</option>
-                </select>
-            </div>
+<form>
+    <table border="1">
+        <thead>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Enter Name">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Enter Name">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <label for="radio-appication">New Application</label>
+                    <input type="radio" name="radio-appication" id="radio-appication" value="application"/>
+                    <label for="radio-appication2">Existing Application</label>
+                    <input type="radio" name="radio-appication2" id="radio-appication2" value="application"/>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <label for="select-choice">Position:</label>
+                    <select name="select-choice" id="select-choice">
+                        <option value="0" selected disabled>Selection</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Software Engineer">Software Engineer</option>
+                        <option value="Software Developer">Software Developer</option>
+                    </select>
+                </div>
 
-        </td>
+            </td>
 
-    </tr>
-    <tr>
-        <td>
-            <div>
-                <label for="checkbox">I agree all the above information is correct and accurate to the best of my knowledge</label>
-                <input type="checkbox" name="checkbox" id="checkbox" />
-            </div>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label for="checkbox">I agree all the above information is correct and accurate to the best of my
+                        knowledge</label>
+                    <input type="checkbox" name="checkbox" id="checkbox"/>
+                </div>
 
-        </td>
-    </tr>
-<tr>
-    <td>
-    <div>
-        <input type="submit" value="Submit" />
-    </div>
-    </td>
-</tr>
-    </tbody>
-
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <input type="submit" value="Submit"/>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table> <!-- KEY: Missing the 'table' end tag. Form still (kinda) works but always close tags :-) -->
+</form>
 </body>
 </html>
